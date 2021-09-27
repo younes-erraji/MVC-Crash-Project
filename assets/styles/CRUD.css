@@ -1,0 +1,81 @@
+﻿.container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 10px;
+  font-size: 1.7rem;
+}
+
+.container .form p {
+  color: #6a6e71;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+.container .form label {
+  display: block;
+  color: #3f3f3f;
+  margin: 0.7rem 0;
+}
+
+.container .form input,
+.container .form select {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 2px solid #3f3f3f;
+  color: #666;
+  padding: 0.4rem 1.4rem;
+  width: 88%;
+  margin-bottom: 0.8rem;
+}
+
+.container .form textarea {
+  display: block;
+  background-color: #fff;
+  color: #666;
+  padding: 0.4rem 1.4rem;
+  border: 0;
+  width: 98%;
+  margin-bottom: 10px;
+  height: 100px;
+  resize: vertical;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .buttons button {
+  width: 90%;
+  padding: 0.3em 1.2em;
+  margin: 14px 0;
+  border: 1px solid #ffffff00;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .buttons button:first-child {
+  background-color: #f14e4e;
+}
+
+.container .buttons button:nth-child(2) {
+  background-color: #f1bb4e;
+}
+
+.container .buttons button:nth-child(3) {
+  background-color: #84f14e;
+}
+
+.container .buttons button:nth-child(4) {
+  background-color: #aef859;
+}
+
+.container .buttons button:nth-child(5) {
+  background-color: #ecc441;
+}
+
+.container .buttons button:last-child {
+  background-color: #f14ebd;
+}

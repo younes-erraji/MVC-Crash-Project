@@ -1,0 +1,77 @@
+﻿section .container h2 {
+  margin: 2.2rem 0;
+  font-size: 3.2rem;
+  width: 100%;
+}
+
+section .container > div {
+  display: flex;
+  margin: 4rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section .container > div .avatar {
+  width: 38%;
+}
+
+section .container > div .avatar img {
+  width: 100%;
+}
+
+section .container .developer {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-row-gap: 1.4rem;
+  width: 60%;
+  padding: 0.4rem 0 0.4rem 2.2rem;
+}
+
+section .container .developer h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 14px 0;
+  word-break: break-word;
+}
+
+section .container .developer h4 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin: 0;
+  word-break: break-word;
+}
+
+section .container .developer p {
+  line-height: 1.7;
+}
+
+section .container .developer .social {
+  display: flex;
+  align-items: center;
+}
+
+section .container .developer .social a {
+  margin: 0 0.8rem;
+}
+
+section .container .developer .social a img {
+  width: 44px;
+  cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  section .container > div .avatar {
+    width: 22%;
+  }
+  section .container .developer {
+    width: 76%;
+  }
+}
+@media (max-width: 575.98px) {
+  section .container > div .avatar {
+    width: 100%;
+  }
+  section .container .developer {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+}

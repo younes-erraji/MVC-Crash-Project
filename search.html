@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MVC</title>
+
+    <link rel="apple-touch-icon" href="./assets/images/main-images/logo.png" />
+    <link
+      rel="shortcut icon"
+      size="88x88"
+      href="./assets/images/main-images/logo.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/utilities/fonts/poppins.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities/style.css" />
+    <style>
+      .container h1 {
+        text-align: center;
+        font-size: 3vw;
+        margin-block: 8px;
+      }
+      .container section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #999;
+      }
+      .container h2 {
+        background-color: #888;
+        color: #fff;
+        padding: 14px 8px;
+        margin: 14px 0;
+        letter-spacing: 2px;
+      }
+      .container section h3 {
+        width: 100%;
+      }
+      .container section p {
+        margin: 0;
+      }
+      .container section p,
+      .container section strong {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px 0;
+        margin: 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <main>
+        <div class="show-dashboard"><img src="./assets/icons/menu.svg" /></div>
+        <div class="dashboard">
+          <div class="x"><img src="./assets/icons/x.svg" /></div>
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/main-images/logo.png" />MVC</a
+            >
+          </h1>
+          <div class="search-box">
+            <input type="text" placeholder="Recherche..." />
+            <button><img src="./assets/icons/search.svg" /></button>
+          </div>
+          <div class="search-validation"></div>
+          <ul>
+            <li>
+              <a class="list" data-list="products"
+                >products<img src="./assets/icons/chevron-down.svg"
+              /></a>
+              <ul class="products sublinks">
+                <li><a href="boxes.html">products</a></li>
+                <li><a href="list.html">product List</a></li>
+                <li><a href="CRUD.html">product CRUD</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="list" data-list="clients"
+                >clients<img src="./assets/icons/chevron-down.svg"
+              /></a>
+              <ul class="clients sublinks">
+                <li><a href="boxes.html">clients</a></li>
+                <li><a href="list.html">clients list</a></li>
+                <li><a href="CRUD.html">Client CRUD</a></li>
+              </ul>
+            </li>
+            <li><a href="categories.html">categories</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <nav>
+            <h2 class="header">CRUD</h2>
+            <div class="user">
+              <span
+                >Younes &nbsp; <img src="./assets/icons/profile.svg" alt=""
+              /></span>
+              <ul class="logout">
+                <li>
+                  <button>Profile</button>
+                </li>
+                <li>
+                  <button>Log out</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section>
+            <div class="container">
+              <h1>Searching For Product...</h1>
+              <h2>Product</h2>
+              <section>
+                <h3>Product</h3>
+                <p>Description</p>
+                <strong>Price</strong>
+              </section>
+              <h2>Clients</h2>
+              <section>
+                <h3>Client</h3>
+                <p>Description</p>
+                <strong>12/18/2020</strong>
+              </section>
+              <h2>Categories</h2>
+              <section>
+                <h3>Category</h3>
+                <p>Description</p>
+                <strong>Count</strong>
+              </section>
+            </div>
+            <footer>
+              <p>Copyright &copy; 2020. Younes ERRAJI</p>
+              <p>Created by Younes ERRAJI</p>
+              <section>
+                <a
+                  title="Instagram"
+                  href="https://www.instagram.com/youneserraji_/"
+                  target="_blank"
+                  ><img src="./assets/icons/instagram.svg" alt="" /></a
+                ><a
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/linkedin.svg" alt="" /></a
+                ><a
+                  title="CodePen"
+                  href="https://codepen.io/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/codepen.svg" alt="" /></a
+                ><a
+                  title="Github"
+                  href="https://www.github.com/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/github.svg" alt=""
+                /></a>
+              </section>
+            </footer>
+          </section>
+        </div>
+      </main>
+    </form>
+    <script src="./assets/scripts/jquery-3.5.1.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>

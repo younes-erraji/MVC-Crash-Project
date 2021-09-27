@@ -1,0 +1,107 @@
+﻿section .system {
+  width: 100%;
+  margin-bottom: 38px;
+}
+section .system input:not([type="image"]),
+section .system select {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 2px solid #3f3f3f;
+  color: #666;
+  padding: 0.4rem 1.4rem;
+  width: 84%;
+}
+section .system select {
+  margin-bottom: 14px;
+}
+.align button {
+  width: 34px;
+  padding: 0;
+  align-self: flex-start;
+  height: 29.8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.align button img {
+  width: 100%;
+  height: 100%;
+}
+
+section .system td .align {
+  display: flex;
+  align-items: center;
+}
+section .system td .align span {
+  color: #f04e4e;
+  padding: 0 4px;
+}
+section hr {
+  border: none;
+  border-bottom: 2px dotted #aec178;
+}
+section .grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+section .grid tr {
+  border: none;
+  border-bottom: 0.4px solid #ddd;
+  border-top: 0.4px solid #ddd;
+}
+
+section .grid tr td,
+section .grid tr th {
+  text-align: center;
+  padding: 0.8rem 0;
+  border: none;
+}
+
+section .grid tr th {
+  color: #888;
+}
+
+section .grid tr:nth-child(even) {
+  background-color: #fff;
+}
+.fill-text {
+  color: #eb5454;
+  font-size: 1.5rem;
+}
+a.add {
+  display: block;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+a.add img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767.98px) {
+  section table {
+    font-size: 14px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main .dashboard {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 8;
+    overflow: auto;
+  }
+
+  main .dashboard .x {
+    display: block;
+  }
+}

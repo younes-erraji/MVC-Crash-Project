@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MVC</title>
+
+    <link rel="apple-touch-icon" href="./assets/images/main-images/logo.png" />
+    <link
+      rel="shortcut icon"
+      size="88x88"
+      href="./assets/images/main-images/logo.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/utilities/fonts/poppins.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities/style.css" />
+    <link rel="stylesheet" href="./assets/styles/users.css" />
+    <script>
+      window.onload = (_) => {
+        $(".container .buttons span").on("click", function () {
+          $(this).addClass("active").siblings().removeClass("active");
+          $(`.${$(this).data("content")}`)
+            .fadeIn(800)
+            .css("display", "grid")
+            .siblings("section")
+            .fadeOut(100);
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <main>
+        <div class="show-dashboard"><img src="./assets/icons/menu.svg" /></div>
+        <div class="dashboard">
+          <div class="x"><img src="./assets/icons/x.svg" /></div>
+          <h1>
+            <a href="./index.html"
+              ><img src="./assets/images/main-images/logo.png" />MVC</a
+            >
+          </h1>
+          <div class="search-box">
+            <input type="text" placeholder="Recherche..." />
+            <button><img src="./assets/icons/search.svg" /></button>
+          </div>
+          <div class="search-validation"></div>
+          <ul>
+            <li>
+              <a class="list" data-list="products"
+                >products<img src="./assets/icons/chevron-down.svg"
+              /></a>
+              <ul class="products sublinks">
+                <li><a href="boxes.html">products</a></li>
+                <li><a href="list.html">product List</a></li>
+                <li><a href="CRUD.html">product CRUD</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="list" data-list="clients"
+                >clients<img src="./assets/icons/chevron-down.svg"
+              /></a>
+              <ul class="clients sublinks">
+                <li><a href="boxes.html">clients</a></li>
+                <li><a href="list.html">clients list</a></li>
+                <li><a href="CRUD.html">Client CRUD</a></li>
+              </ul>
+            </li>
+            <li><a href="categories.html">categories</a></li>
+            <li><a href="users.html">Users</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <nav>
+            <h2 class="header">CRUD</h2>
+            <div class="user">
+              <span
+                >Younes &nbsp; <img src="./assets/icons/profile.svg" alt=""
+              /></span>
+              <ul class="logout">
+                <li>
+                  <button>Profile</button>
+                </li>
+                <li>
+                  <button>Log out</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section>
+            <div class="container">
+              <div class="buttons">
+                <span data-content="list" class="active">users list</span>
+                <span data-content="CRUD">CRUD</span>
+              </div>
+              <hr />
+              <div class="navigation">
+                <section class="list">
+                  <table class="grid">
+                    <tr>
+                      <th>Name</th>
+                      <th>Username</th>
+                      <th>Password</th>
+                    </tr>
+                    <tr>
+                      <td>Younes</td>
+                      <td>Younes</td>
+                      <td>Younes</td>
+                    </tr>
+                    <tr>
+                      <td>Safae</td>
+                      <td>Safae</td>
+                      <td>Safae</td>
+                    </tr>
+                  </table>
+                </section>
+                <section class="CRUD">
+                  <p>
+                    <span class="error">Error</span>
+                  </p>
+                  <table>
+                    <tr>
+                      <td>CIN</td>
+                      <td colspan="2">
+                        <input type="text" />
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Name</td>
+                      <td colspan="2">
+                        <input type="text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>username</td>
+                      <td colspan="2">
+                        <input type="text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td colspan="2">
+                        <input type="text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Type</td>
+                      <td colspan="2">
+                        <select name="" id="select">
+                          <option value="1">Younes</option>
+                          <option value="2">Safae</option>
+                          <option value="3">Ilham</option>
+                          <option value="4">Malika</option>
+                          <option value="5">Mohammed</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="vr"></div>
+                  <div class="edit-users">
+                    <button>Add</button>
+                    <button>Search</button>
+                    <button>Show</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <p>Copyright &copy; 2020. Younes ERRAJI</p>
+              <p>Created by Younes ERRAJI</p>
+              <section>
+                <a
+                  title="Instagram"
+                  href="https://www.instagram.com/youneserraji_/"
+                  target="_blank"
+                  ><img src="./assets/icons/instagram.svg" alt="" /></a
+                ><a
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/linkedin.svg" alt="" /></a
+                ><a
+                  title="CodePen"
+                  href="https://codepen.io/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/codepen.svg" alt="" /></a
+                ><a
+                  title="Github"
+                  href="https://www.github.com/younes-erraji"
+                  target="_blank"
+                  ><img src="./assets/icons/github.svg" alt=""
+                /></a>
+              </section>
+            </footer>
+          </section>
+        </div>
+      </main>
+    </form>
+    <script src="./assets/scripts/jquery-3.5.1.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
